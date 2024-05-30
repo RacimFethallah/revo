@@ -5,6 +5,7 @@ import HeroSeparator from "@/components/heroSection/heroSeparator";
 import Image from "next/image";
 import ServicesSeparator from "@/components/servicesSection/servicesSeparator";
 import Features from "@/components/featuresSection/features";
+import Contact from "@/components/contactSection/contact";
 
 export default function Home() {
   return (
@@ -17,7 +18,8 @@ export default function Home() {
         <About />
         <ServicesSeparator />
         <Features />
-        <section className=" h-[1500px]"></section>
+        <Contact />
+        {/* <section className=" h-[1500px]"></section> */}
       </main>
     </>
   );
