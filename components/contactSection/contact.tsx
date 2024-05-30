@@ -3,10 +3,11 @@ import email from "@/assets/email.svg";
 import phone from "@/assets/phone.svg";
 import gps from "@/assets/gps.svg";
 import Image from "next/image";
+import upload from "@/assets/upload.svg";
 
 export default function Contact() {
   return (
-    <section className="flex flex-col justify-center w-full px-48 mt-40">
+    <section className="flex flex-row justify-between w-full px-36 mt-40">
       <div className="flex flex-col">
         <div className=" w-max">
           <h1 className="font-bold text-6xl tracking-wide">
@@ -60,6 +61,49 @@ export default function Contact() {
           </div>
         </div>
       </div>
+      <form className="flex flex-col gap-5" action="">
+        <input type="text" placeholder="Contact Name" className="form-input" />
+        <input type="text" placeholder="street" className=" form-input" />
+        <div className="flex gap-3">
+          <input
+            placeholder="City"
+            className="w-[357px] form-input"
+            type="text"
+          />
+          <input
+            placeholder="Post Code"
+            type="text"
+            className=" w-[167px] form-input"
+          />
+        </div>
+        <input placeholder="Contact Phone" type="text" className="form-input" />
+        <input placeholder="Email" type="text" className="form-input" />
+        <input
+          placeholder="Let's talk about your idea"
+          type="text"
+          className="form-input"
+        />
+        <div className="w-full">
+          <label htmlFor="file-upload" className="custom-file-upload w-full">
+            <div className="flex flex-row items-center justify-center gap-5">
+              <Image src={upload} alt="upload" width={30} height={30} />
+              Custom Upload
+            </div>
+          </label>
+          <input id="file-upload" type="file" />
+          <p className=" text-xs p-1 font-light">Attach file. File size of your documents should not exceed 10MB</p>
+        </div>
+        <div className="flex flex-row gap-3">
+        <input type="checkbox"/>
+        <p className=" text-sm">I want to protect my data by signing an NDA</p>
+        </div>
+
+
+        <button type="submit" className="bg-[#0982FE] text-white font-semibold rounded-lg py-4" >
+            SUBMIT
+        </button>
+        
+      </form>
     </section>
   );
 }
