@@ -43,7 +43,7 @@ export default function Hero() {
           <p className="text-base font-semibold leading-[22.5px] text-left">
             Connects buyers and sellers of 3D models and printing services,
             making it easy to find and purchase high-quality designs or offer
-            your own for sale.Join our community today and start exploring.
+            your own for sale. Join our community today and start exploring.
           </p>
           <button className="bg-white w-[372px] h-[59px] mt-4 rounded-[20px]">
             <span className="text-black text-2xl font-semibold leading-[37.5px] text-left">

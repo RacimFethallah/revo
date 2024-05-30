@@ -26,7 +26,7 @@ export default function About() {
           of buying and selling designs and 3D printers for individuals and
           businesses alike.
         </p>
-        <button className="w-[256px] h-[60px] rounded-3xl border border-white">
+        <button className="w-[256px] h-[60px] rounded-3xl border border-white hover:bg-white hover:text-black transition-all text-xl font-semibold">
           Join Us Now
         </button>
       </div>
