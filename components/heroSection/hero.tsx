@@ -39,7 +39,7 @@ export default function Hero() {
         <div className="mx-4">
           <Image src={heroImage} alt="3D Machine" width={500} height={500} />
         </div>
-        <div className="flex flex-col ml-4 w-[387px]">
+        <div className="flex flex-col ml-4 w-[387px] gap-y-2">
           <p className="text-base font-semibold leading-[22.5px] text-left">
             Connects buyers and sellers of 3D models and printing services,
             making it easy to find and purchase high-quality designs or offer
@@ -52,6 +52,7 @@ export default function Hero() {
           </button>
         </div>
       </div>
+
     </section>
   );
 }
