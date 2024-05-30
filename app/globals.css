@@ -3,9 +3,9 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 1, 1, 1;
+  --background-end-rgb: 1, 1, 1;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -30,4 +30,39 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.nav-link {
+  color: #999999;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.rounded-shape-left {
+  width: 386px;
+  height: 430px;
+  position: absolute;
+  top: 336px;
+  left: -166px;
+  background-color: #e763f326;
+  border-radius: 50%;
+  filter: blur(100px); 
+}
+
+
+.rounded-shape-right {
+  width: 400px;
+  height: 439px;
+  position: absolute;
+  top: 109px;
+  right: -166px;
+  background-color: #EBA23526;
+  border-radius: 50%;
+  filter: blur(100px);
+  gap: 0px;
+  opacity: 0px;
 }
